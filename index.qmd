@@ -3,5 +3,16 @@ title: "Index"
 
 format: 
   revealjs:
-    theme: [moon, custom.scss]
 ---
+
+## Hello, There
+
+This presentation will show you examples of what you can do with Quarto and [Reveal.js](https://revealjs.com), including:
+
+-   Presenting code and LaTeX equations
+-   Including computations in slide output
+-   Image, video, and iframe backgrounds
+-   Fancy transitions and animations
+-   Printing to PDF
+
+...and much more
