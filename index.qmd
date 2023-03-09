@@ -1,8 +1,9 @@
 ---
 title: "Index"
-
-format: 
-  revealjs:
+subtitle: "Create beautiful interactive slide decks with Reveal.js"
+format:
+  revealjs: 
+    slide-number: true
 ---
 
 ## Hello, There
