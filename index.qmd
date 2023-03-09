@@ -1,4 +1,6 @@
 ---
+title: "Index"
+
 format: 
   revealjs:
     theme: [moon, custom.scss]
