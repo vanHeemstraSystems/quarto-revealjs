@@ -5,6 +5,10 @@ Based on "Making Slides in Quarto with reveal.js" at https://meghan.rbind.io/blo
 
 Based on "Reveal JS — HTML Presentation Framework (1 of 6, Intro and installation)" at https://www.youtube.com/watch?v=a6ioNtv2H-E
 
+Based on "Create quarto website and add reveals presentations" at https://community.rstudio.com/t/create-quarto-website-and-add-reveals-presentations/147085/2
+
+Based on "Render HTML document and revealjs presentation" at https://github.com/quarto-dev/quarto-cli/discussions/1751
+
 Can be read as "Quarto RevealJS" at https://app.gitbook.com/o/QGgiJiNkwpv437Z2nY4O/s/PzgsiAKvIjFvzE5gqB5O/
 
 Can be browsed as "Quarto RevealJS" at https://vanheemstrasystems.github.io/quarto-revealjs/
