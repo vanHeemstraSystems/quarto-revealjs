@@ -36,12 +36,14 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 
 ## Progress
 
+```{=html}
 <div class="container">
   <div class="circular-progress">
     <span class="progress-value">0%</span>
   </div>
   <span class="text">Progress</span>
-</div> 
+</div>
+```
 
 <script type="text/javascript">
 let circularProgress = document.querySelector(".circular-progress"),
