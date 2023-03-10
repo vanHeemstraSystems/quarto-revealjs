@@ -21,3 +21,5 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 -   Printing to PDF
 
 ...<div class="foo">and much more</div>
+
+<script src="lib/js/head.min.js"></script>
