@@ -5,6 +5,9 @@ format:
   revealjs: 
     slide-number: true
     css: slidedeck.css
+execute:
+  echo: true
+  warning: true    
 ---
 
 ## Hello, There
