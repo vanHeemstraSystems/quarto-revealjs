@@ -35,13 +35,9 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 <script type="text/javascript" src="https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/slidedeck.js"></script>
 
 ## Progress
-<h3>This is a progress visualization based on "Create Circular Progress Bar in HTML CSS & JavaScript" at https://www.codinglabweb.com/2022/06/progress-bar-html-css-javascript.html</h3>
 
-<div class="container">
-    <div class="circular-progress">
-        <span class="progress-value">0%</span>
-    </div>
-    <span class="text">ACT I: Beginning</span>
+<div class="container>
+  Inside container            
 </div>
 
 <script type="text/javascript">
