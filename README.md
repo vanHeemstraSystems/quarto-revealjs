@@ -17,6 +17,8 @@ Based on "External JavaScript file" at https://www.javatpoint.com/external-javas
 
 Based on "Create a Circular Progress Bar using HTML and CSS" at https://www.geeksforgeeks.org/create-a-circular-progress-bar-using-html-and-css/
 
+Based on "How to make an Awesome Circular Progress Bar using Only HTML And CSS" at https://www.youtube.com/watch?v=cmAeMnpukaQ
+
 Can be read as "Quarto RevealJS" at https://app.gitbook.com/o/QGgiJiNkwpv437Z2nY4O/s/PzgsiAKvIjFvzE5gqB5O/
 
 Can be browsed as "Quarto RevealJS" at https://vanheemstrasystems.github.io/quarto-revealjs/
