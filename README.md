@@ -15,6 +15,8 @@ Based on "Customising Reveal.js beyond creating a personalised theme" at https:/
 
 Based on "External JavaScript file" at https://www.javatpoint.com/external-javascript-file
 
+Based on "Create a Circular Progress Bar using HTML and CSS" at https://www.geeksforgeeks.org/create-a-circular-progress-bar-using-html-and-css/
+
 Can be read as "Quarto RevealJS" at https://app.gitbook.com/o/QGgiJiNkwpv437Z2nY4O/s/PzgsiAKvIjFvzE5gqB5O/
 
 Can be browsed as "Quarto RevealJS" at https://vanheemstrasystems.github.io/quarto-revealjs/
