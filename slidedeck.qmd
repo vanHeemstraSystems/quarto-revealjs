@@ -17,4 +17,4 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 -   Fancy transitions and animations
 -   Printing to PDF
 
-...and much more
+...<div class="foo">and much more</div>
