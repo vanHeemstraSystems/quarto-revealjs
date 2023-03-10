@@ -1,3 +1,3 @@
 function msg(){  
-  alert("Hello, Slidedeck!");  
+  alert("Hello, External Slidedeck Script!");  
 }
