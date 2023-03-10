@@ -30,7 +30,7 @@
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css" id="theme">
   <link rel="stylesheet" href="slidedeck.css">
-  <link rel="stylesheet" href="status-track.css">
+  <link rel="stylesheet" href="circular-progress-bar.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -358,104 +358,24 @@ and much more
 </section>
 <section id="progress" class="slide level2">
 <h2>Progress</h2>
-<p>This is a progress visualization based on “CSS Status Track Using Flex Sizing” at https://codepen.io/n3dst4/pen/ByBQPx</p>
-<div class="status-track">
-<div class="current">
-<i class="fa fa-cog"></i> <label>Setup</label>
-</div>
-<div class="future">
-<i class="fa fa-circle-o"></i> <label>Ready</label>
-</div>
-<div class="future">
-<i class="fa fa-circle-o"></i> <label>Pre-Match</label>
-</div>
-<div class="future">
-<i class="fa fa-circle-o"></i> <label>In-Play</label>
-</div>
-<div class="future">
-<i class="fa fa-circle-o"></i> <label>Settled</label>
-</div>
-</div>
-<div class="spacer">
+<p>This is a progress visualization based on “Create a Circular Progress Bar using HTML and CSS” at https://www.geeksforgeeks.org/create-a-circular-progress-bar-using-html-and-css/</p>
+<pre><code>&lt;!-- Creating a container class that 
+    hold other useful classes --&gt;
+&lt;div class="container"&gt;
 
-</div>
-<div class="status-track">
-<div class="complete">
-<i class="fa fa-check-circle-o"></i> <label>Setup</label>
-</div>
-<div class="current">
-<i class="fa fa-circle"></i> <label>Ready</label>
-</div>
-<div class="future">
-<i class="fa fa-circle-o"></i> <label>Pre-Match</label>
-</div>
-<div class="future">
-<i class="fa fa-circle-o"></i> <label>In-Play</label>
-</div>
-<div class="future">
-<i class="fa fa-circle-o"></i> <label>Settled</label>
-</div>
-</div>
-<div class="spacer">
+    &lt;!-- Creating a ui-widgets classes that 
+        store other useful classes like 
+        ui-values and ui-labels --&gt;
+    &lt;div class="ui-widgets"&gt;
+        &lt;div class="ui-values"&gt;85%&lt;/div&gt;
+        &lt;div class="ui-labels"&gt;Java&lt;/div&gt;
+    &lt;/div&gt;
 
-</div>
-<div class="status-track">
-<div class="complete">
-<i class="fa fa-check-circle-o"></i> <label>Setup</label>
-</div>
-<div class="complete">
-<i class="fa fa-check-circle-o"></i> <label>Ready</label>
-</div>
-<div class="current">
-<i class="fa fa-cog"></i> <label>Pre-Match</label>
-</div>
-<div class="future">
-<i class="fa fa-circle-o"></i> <label>In-Play</label>
-</div>
-<div class="future">
-<i class="fa fa-circle-o"></i> <label>Settled</label>
-</div>
-</div>
-<div class="spacer">
-
-</div>
-<div class="status-track">
-<div class="complete">
-<i class="fa fa-check-circle-o"></i> <label>Setup</label>
-</div>
-<div class="complete">
-<i class="fa fa-check-circle-o"> </i> <label>Ready</label>
-</div>
-<div class="complete">
-<i class="fa fa-check-circle-o"></i> <label>Pre-Match</label>
-</div>
-<div class="current">
-<i class="fa fa-play-circle"></i> <label>In-Play</label>
-</div>
-<div class="future">
-<i class="fa fa-circle-o"></i> <label>Settled</label>
-</div>
-</div>
-<div class="spacer">
-
-</div>
-<div class="status-track">
-<div class="complete">
-<i class="fa fa-check-circle-o"></i> <label>Setup</label>
-</div>
-<div class="complete">
-<i class="fa fa-check-circle-o"> </i> <label>Ready</label>
-</div>
-<div class="complete">
-<i class="fa fa-check-circle-o"></i> <label>Pre-Match</label>
-</div>
-<div class="complete">
-<i class="fa fa-check-circle-o"></i> <label>In-Play</label>
-</div>
-<div class="complete">
-<i class="fa fa-check-circle-o"></i> <label>Settled</label>
-</div>
-</div>
+    &lt;div class="ui-widgets"&gt;
+        &lt;div class="ui-values"&gt;50%&lt;/div&gt;
+        &lt;div class="ui-labels"&gt;HTML&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
 <div class="footer footer-default">
 
