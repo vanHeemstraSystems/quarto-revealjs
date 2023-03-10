@@ -9,6 +9,8 @@ Based on "Create quarto website and add reveals presentations" at https://commun
 
 Based on "Render HTML document and revealjs presentation" at https://github.com/quarto-dev/quarto-cli/discussions/1751
 
+Based on "HTML Block" at https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/
+
 Can be read as "Quarto RevealJS" at https://app.gitbook.com/o/QGgiJiNkwpv437Z2nY4O/s/PzgsiAKvIjFvzE5gqB5O/
 
 Can be browsed as "Quarto RevealJS" at https://vanheemstrasystems.github.io/quarto-revealjs/
