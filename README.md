@@ -11,6 +11,8 @@ Based on "Render HTML document and revealjs presentation" at https://github.com/
 
 Based on "HTML Block" at https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/
 
+Based on "Customising Reveal.js beyond creating a personalised theme" at https://chenhuijing.com/blog/customising-revealjs-beyond-theming/
+
 Can be read as "Quarto RevealJS" at https://app.gitbook.com/o/QGgiJiNkwpv437Z2nY4O/s/PzgsiAKvIjFvzE5gqB5O/
 
 Can be browsed as "Quarto RevealJS" at https://vanheemstrasystems.github.io/quarto-revealjs/
