@@ -25,6 +25,6 @@
     "href": "slidedeck.html#progress",
     "title": "Slidedeck",
     "section": "Progress",
-    "text": "Progress\n\nThis is a progress visualization based on “Create a Circular Progress Bar using HTML and CSS” at https://www.geeksforgeeks.org/create-a-circular-progress-bar-using-html-and-css/\n\n\n\nInside container"
+    "text": "Progress\n\nThis is a progress visualization based on “Create a Circular Progress Bar using HTML and CSS” at https://www.geeksforgeeks.org/create-a-circular-progress-bar-using-html-and-css/\n\n\n\n<div class=\"ui-values\">85%</div>\n<div class=\"ui-labels\">ACT I: Beginning</div>"
   }
 ]
