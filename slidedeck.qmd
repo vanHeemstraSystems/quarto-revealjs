@@ -38,20 +38,6 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 
 This is a progress visualization based on "Create a Circular Progress Bar using HTML and CSS" at https://www.geeksforgeeks.org/create-a-circular-progress-bar-using-html-and-css/
 
-    <!-- Creating a container class that 
-        hold other useful classes -->
-    <div class="container">
-  
-        <!-- Creating a ui-widgets classes that 
-            store other useful classes like 
-            ui-values and ui-labels -->
-        <div class="ui-widgets">
-            <div class="ui-values">85%</div>
-            <div class="ui-labels">Java</div>
-        </div>
-  
-        <div class="ui-widgets">
-            <div class="ui-values">50%</div>
-            <div class="ui-labels">HTML</div>
-        </div>
-    </div>
+<div class="container">
+  Inside container
+</div>
