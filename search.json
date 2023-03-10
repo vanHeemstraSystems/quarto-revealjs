@@ -25,6 +25,6 @@
     "href": "slidedeck.html#progress",
     "title": "Slidedeck",
     "section": "Progress",
-    "text": "Progress\n\nThis is a progress visualization based on “Create Circular Progress Bar in HTML CSS & JavaScript” at https://www.codinglabweb.com/2022/06/progress-bar-html-css-javascript.html\n\n\n<div class=\"circular-progress\">\n    <span class=\"progress-value\">0%</span>\n</div>\n<span class=\"text\">ACT I: Beginning</span>"
+    "text": "Progress\n<div class=“container> Inside container"
   }
 ]
