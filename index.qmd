@@ -1,19 +1,8 @@
 ---
 title: "Index"
-subtitle: "Create beautiful interactive slide decks with Reveal.js"
-format:
-  revealjs: 
-    slide-number: true
 ---
 
-## Hello, There
 
-This presentation will show you examples of what you can do with Quarto and [Reveal.js](https://revealjs.com), including:
-
--   Presenting code and LaTeX equations
--   Including computations in slide output
--   Image, video, and iframe backgrounds
--   Fancy transitions and animations
--   Printing to PDF
-
-...and much more
+```{=html}
+<iframe width="780" height="500" src="https://quarto.org/" title="Quarto Documentation"></iframe>
+```
