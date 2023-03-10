@@ -1,1 +1,3 @@
-alert("Hello, Slidedeck!");
+function msg(){  
+  alert("Hello, Slidedeck!");  
+}
