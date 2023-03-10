@@ -25,6 +25,6 @@
     "href": "slidedeck.html#progress",
     "title": "Slidedeck",
     "section": "Progress",
-    "text": "Progress\nThis is a progress visualization based on “Create a Circular Progress Bar using HTML and CSS” at https://www.geeksforgeeks.org/create-a-circular-progress-bar-using-html-and-css/\n<!-- Creating a container class that \n    hold other useful classes -->\n<div class=\"container\">\n\n    <!-- Creating a ui-widgets classes that \n        store other useful classes like \n        ui-values and ui-labels -->\n    <div class=\"ui-widgets\">\n        <div class=\"ui-values\">85%</div>\n        <div class=\"ui-labels\">Java</div>\n    </div>\n\n    <div class=\"ui-widgets\">\n        <div class=\"ui-values\">50%</div>\n        <div class=\"ui-labels\">HTML</div>\n    </div>\n</div>"
+    "text": "Progress\nThis is a progress visualization based on “Create a Circular Progress Bar using HTML and CSS” at https://www.geeksforgeeks.org/create-a-circular-progress-bar-using-html-and-css/\n\nInside container"
   }
 ]
