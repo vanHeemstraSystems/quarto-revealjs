@@ -22,4 +22,4 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 
 ...<div class="foo">and much more</div>
 
-<script src="lib/js/head.min.js"></script>
+<script src="https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/slidedeck.js"></script>
