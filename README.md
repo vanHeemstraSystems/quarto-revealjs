@@ -13,6 +13,8 @@ Based on "HTML Block" at https://mine-cetinkaya-rundel.github.io/quarto-tip-a-da
 
 Based on "Customising Reveal.js beyond creating a personalised theme" at https://chenhuijing.com/blog/customising-revealjs-beyond-theming/
 
+Based on "External JavaScript file" at https://www.javatpoint.com/external-javascript-file
+
 Can be read as "Quarto RevealJS" at https://app.gitbook.com/o/QGgiJiNkwpv437Z2nY4O/s/PzgsiAKvIjFvzE5gqB5O/
 
 Can be browsed as "Quarto RevealJS" at https://vanheemstrasystems.github.io/quarto-revealjs/
