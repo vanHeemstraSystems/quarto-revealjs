@@ -25,6 +25,6 @@
     "href": "slidedeck.html#progress",
     "title": "Slidedeck",
     "section": "Progress",
-    "text": "Progress\nThis is a progress visualization based on “Task Progress Meter” at https://codepen.io/clintabrown/pen/kQqVeb\n\n\n\n\n Task 1  Task 2  Task 3  Task 4  Task 5  Task 6 0% Completed"
+    "text": "Progress\nThis is a progress visualization based on “CSS Status Track Using Flex Sizing” at https://codepen.io/n3dst4/pen/ByBQPx\n\n\n Setup\n\n\n Ready\n\n\n Pre-Match\n\n\n In-Play\n\n\n Settled\n\n\n\n\n\n\n\n Setup\n\n\n Ready\n\n\n Pre-Match\n\n\n In-Play\n\n\n Settled\n\n\n\n\n\n\n\n Setup\n\n\n Ready\n\n\n Pre-Match\n\n\n In-Play\n\n\n Settled\n\n\n\n\n\n\n\n Setup\n\n\n  Ready\n\n\n Pre-Match\n\n\n In-Play\n\n\n Settled\n\n\n\n\n\n\n\n Setup\n\n\n  Ready\n\n\n Pre-Match\n\n\n In-Play\n\n\n Settled\n\n\nupdateProgressVal();"
   }
 ]
