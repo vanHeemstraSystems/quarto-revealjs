@@ -1,5 +1,5 @@
 ---
-title: "Index"
+title: "Slidedeck"
 subtitle: "Create beautiful interactive slide decks with Reveal.js"
 format:
   revealjs: 
