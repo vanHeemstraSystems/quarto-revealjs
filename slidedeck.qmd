@@ -26,4 +26,4 @@ This presentation will show you examples of what you can do with Quarto and [Rev
   <input type="button" value="Say Hello" onclick="msg()"/>  
 </form> 
 
-<script src="https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/slidedeck.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/slidedeck.js"></script>
