@@ -6,8 +6,8 @@ format:
     slide-number: true
     css: [slidedeck.css, circular-progress-bar.css]
 execute:
-  echo: true
-  warning: true    
+  echo: false
+  warning: false    
 ---
 
 ## Hello, There
