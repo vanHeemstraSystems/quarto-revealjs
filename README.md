@@ -29,6 +29,8 @@ Based on "JavaScript Fetch API and Cross-Origin Resource Sharing (CORS)" at http
 
 Based on "Serving files directly from github" at https://groups.google.com/g/brython/c/M--O59kY6GA
 
+Based on "JavaScript Promise Tutorial – How to Resolve or Reject Promises in JS" at https://www.freecodecamp.org/news/javascript-promise-tutorial-how-to-resolve-or-reject-promises-in-js/
+
 Can be read as "Quarto RevealJS" at https://app.gitbook.com/o/QGgiJiNkwpv437Z2nY4O/s/PzgsiAKvIjFvzE5gqB5O/
 
 Can be browsed as "Quarto RevealJS" at https://vanheemstrasystems.github.io/quarto-revealjs/
