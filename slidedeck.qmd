@@ -46,7 +46,8 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 ```
 
 ```{ojs}
-let progress = Promise.all([d3.json("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json")])
+//| echo: false
+Promise.all([d3.json("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json")])
   .then(
   function success(allData) {
     const progress = allData[0];
