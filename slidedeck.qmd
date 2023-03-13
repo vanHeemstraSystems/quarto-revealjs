@@ -64,5 +64,9 @@ let progress = setInterval(() => {
 </script>  
 
 ```{ojs}
-data = d3.csv("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/cities.csv")
+cities = d3.csv("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/cities.csv")
+```
+
+```{ojs}
+employees = d3.json("raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/employees.json")
 ```
