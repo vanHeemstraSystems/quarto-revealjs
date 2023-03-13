@@ -373,10 +373,14 @@ let progressPromise = new Promise(function(resolve, reject) {
   
 const progressConsumer = () => {
     progressPromise.then(
-      result => {},
-      error => {}
+      (result) => {
+        console.log(result);
+      },
+      (error) => {
+        console.log(error);
+      }
     )
-}  
+}
 
 console.log(progressPromise);
 
