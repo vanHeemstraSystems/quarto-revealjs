@@ -448,9 +448,17 @@ let progress = setInterval(() => {
 }, speed);
 </script>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="66" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 65;"><span id="cb1-66"><a href="#cb1-66"></a>data <span class="op">=</span> d3<span class="op">.</span><span class="fu">csv</span>(<span class="st">"https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/cities.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="66" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 65;"><span id="cb1-66"><a href="#cb1-66"></a>cities <span class="op">=</span> d3<span class="op">.</span><span class="fu">csv</span>(<span class="st">"https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/cities.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="70" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 69;"><span id="cb2-70"><a href="#cb2-70"></a>employees <span class="op">=</span> d3<span class="op">.</span><span class="fu">json</span>(<span class="st">"raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/employees.json"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
 
 </div>
 </div>
@@ -672,7 +680,7 @@ let progress = setInterval(() => {
       });
     </script>
     <script type="ojs-module-contents">
-    {"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"data = d3.csv(\"https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/cities.csv\")\n"}]}
+    {"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"cities = d3.csv(\"https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/cities.csv\")\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"employees = d3.json(\"raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/employees.json\")\n"}]}
     </script>
     <script type="module">
     window._ojs.paths.runtimeToDoc = "../..";
