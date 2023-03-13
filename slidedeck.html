@@ -362,7 +362,7 @@ and much more
 <div class="container">
   <div class="circular-progress">
     <span class="progress-value">0%</span>
-    <span class="progress-end">?</span>
+    <span class="progress-loaded-value">?</span>
   </div>
   <span class="text">Progress</span>
 </div>
@@ -380,10 +380,11 @@ let progressData = Promise.all([d3.json("https://raw.githubusercontent.com/vanHe
 
 let circularProgress = document.querySelector(".circular-progress"),
     progressValue = document.querySelector(".progress-value"),
-    progressEnd = document.querySelector(".progress-end");
+    progressLoadedValue = document.querySelector(".progress-loaded-value");
 
 let progressStartValue = 0,    
-    progressEndValue = 90,    
+    progressEndValue = 90,
+    progressLoadedValue = 55,
     speed = 100;
 
 let progress = setInterval(() => {
@@ -393,7 +394,7 @@ let progress = setInterval(() => {
     if(progressStartValue == progressEndValue){
         clearInterval(progress);
     }
-    progressEnd.textContent = `${progressEnd}%`
+    progressLoadedValue.textContent = `${progressLoadedValue}%`
 }, speed);
 </script>
 
