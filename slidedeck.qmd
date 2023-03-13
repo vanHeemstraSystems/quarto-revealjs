@@ -70,8 +70,18 @@ const ALL_PROGRESS_URL = 'https://raw.githack.com/vanHeemstraSystems/quarto-reve
 // let promise = getPromise(ALL_POKEMONS_URL);
 let promise = getPromise(ALL_PROGRESS_URL);
 
-const consumer = () => {
-    promise.catch(error => console.log('We have encountered an Error!'));
+let loading = true;
+loading && console.log('Loading ...');
+  
+const consumer = () => {  
+    promise.finally(() => {
+      loading = false;
+      console.log(`Promise Settled and loading is ${loading}`);
+    }).then((result) => {
+      console.log({result});
+    }).catch((error) => {
+      console.log(error)
+    });
 }
 
 consumer();
