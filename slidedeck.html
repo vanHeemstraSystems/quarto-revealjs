@@ -384,8 +384,7 @@ let circularProgress = document.querySelector(".circular-progress"),
 
 let progressStartValue = 0,    
     progressEndValue = 90,
-    jsonData = JSON.parse(progressData),
-    progressLoadedEndValue = jsonData["end"],
+    progressLoadedEndValue = progressData["end"],
     speed = 100;
 
 let progress = setInterval(() => {
