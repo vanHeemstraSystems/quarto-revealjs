@@ -25,6 +25,6 @@
     "href": "slidedeck.html#progress",
     "title": "Slidedeck",
     "section": "Progress",
-    "text": "Progress\n\n  \n    0%\n  \n  Progress"
+    "text": "Progress\n\n  \n    0%\n  \n  Progress\n\n\n\ndata = d3.csv(\"https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/cities.csv\")"
   }
 ]
