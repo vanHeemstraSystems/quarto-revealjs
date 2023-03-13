@@ -49,17 +49,17 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 let circularProgress = document.querySelector(".circular-progress"),
     progressValue = document.querySelector(".progress-value");
 
-let progress = Promise.all([d3.json("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json")])
+let progressData = Promise.all([d3.json("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json")])
   .then(
     function success(allData) {
-      const progressData = allData[0];
-      return[progressData[0]]
+      const allDataProgress = allData[0];
+      return[allDataProgress[0]]
     },
     function error(e) {
       throw e;
     }
   );
-  
+
 let progressStartValue = 0,    
     progressEndValue = 90,    
     speed = 100;
