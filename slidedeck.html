@@ -27,70 +27,6 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css" id="theme">
   <link rel="stylesheet" href="slidedeck.css">
@@ -383,8 +319,6 @@
       margin-right: 0; 
     }
   </style>
-  <script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
-  <link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -429,40 +363,6 @@ and much more
     <span class="progress-value">0%</span>
   </div>
   <span class="text">Progress</span>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="49" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 48;"><span id="cb1-49"><a href="#cb1-49"></a><span class="bu">Promise</span><span class="op">.</span><span class="fu">all</span>([d3<span class="op">.</span><span class="fu">json</span>(<span class="st">"https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json"</span>)])</span>
-<span id="cb1-50"><a href="#cb1-50"></a>  <span class="op">.</span><span class="fu">then</span>(</span>
-<span id="cb1-51"><a href="#cb1-51"></a>  <span class="kw">function</span> <span class="fu">success</span>(allData) {</span>
-<span id="cb1-52"><a href="#cb1-52"></a>    <span class="kw">const</span> progress <span class="op">=</span> allData[<span class="dv">0</span>]<span class="op">;</span></span>
-<span id="cb1-53"><a href="#cb1-53"></a>    <span class="co">/*</span></span>
-<span id="cb1-54"><a href="#cb1-54"></a><span class="co">    let circularProgress = document.querySelector(".circular-progress"),</span></span>
-<span id="cb1-55"><a href="#cb1-55"></a><span class="co">    progressValue = document.querySelector(".progress-value");</span></span>
-<span id="cb1-56"><a href="#cb1-56"></a><span class="co">    </span></span>
-<span id="cb1-57"><a href="#cb1-57"></a><span class="co">    let progressStartValue = 0,    </span></span>
-<span id="cb1-58"><a href="#cb1-58"></a><span class="co">    progressEndValue = 90,    </span></span>
-<span id="cb1-59"><a href="#cb1-59"></a><span class="co">    speed = 100;</span></span>
-<span id="cb1-60"><a href="#cb1-60"></a><span class="co">    </span></span>
-<span id="cb1-61"><a href="#cb1-61"></a><span class="co">    let progress = setInterval(() =&gt; {</span></span>
-<span id="cb1-62"><a href="#cb1-62"></a><span class="co">      progressStartValue++;</span></span>
-<span id="cb1-63"><a href="#cb1-63"></a><span class="co">      progressValue.textContent = `${progressStartValue}%`</span></span>
-<span id="cb1-64"><a href="#cb1-64"></a><span class="co">      circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`</span></span>
-<span id="cb1-65"><a href="#cb1-65"></a><span class="co">      if(progressStartValue == progressEndValue){</span></span>
-<span id="cb1-66"><a href="#cb1-66"></a><span class="co">        clearInterval(progress);</span></span>
-<span id="cb1-67"><a href="#cb1-67"></a><span class="co">      }    </span></span>
-<span id="cb1-68"><a href="#cb1-68"></a><span class="co">    }, speed);</span></span>
-<span id="cb1-69"><a href="#cb1-69"></a><span class="co">    */</span></span>
-<span id="cb1-70"><a href="#cb1-70"></a>    <span class="cf">return</span>[progress[<span class="dv">0</span>]]</span>
-<span id="cb1-71"><a href="#cb1-71"></a>  }<span class="op">,</span></span>
-<span id="cb1-72"><a href="#cb1-72"></a>  <span class="kw">function</span> <span class="fu">error</span>(e) {</span>
-<span id="cb1-73"><a href="#cb1-73"></a>    <span class="cf">throw</span> e<span class="op">;</span></span>
-<span id="cb1-74"><a href="#cb1-74"></a>  }</span>
-<span id="cb1-75"><a href="#cb1-75"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-1" data-nodetype="expression">
-
-</div>
-</div>
 </div>
 <script type="text/javascript">
 let circularProgress = document.querySelector(".circular-progress"),
@@ -707,16 +607,6 @@ let progress = setInterval(() => {
           RevealZoom
         ]
       });
-    </script>
-    <script type="ojs-module-contents">
-    {"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"Promise.all([d3.json(\"https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json\")])\n  .then(\n  function success(allData) {\n    const progress = allData[0];\n    /*\n    let circularProgress = document.querySelector(\".circular-progress\"),\n    progressValue = document.querySelector(\".progress-value\");\n    \n    let progressStartValue = 0,    \n    progressEndValue = 90,    \n    speed = 100;\n    \n    let progress = setInterval(() => {\n      progressStartValue++;\n      progressValue.textContent = `${progressStartValue}%`\n      circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`\n      if(progressStartValue == progressEndValue){\n        clearInterval(progress);\n      }    \n    }, speed);\n    */\n    return[progress[0]]\n  },\n  function error(e) {\n    throw e;\n  }\n)\n"}]}
-    </script>
-    <script type="module">
-    window._ojs.paths.runtimeToDoc = "../..";
-    window._ojs.paths.runtimeToRoot = "../..";
-    window._ojs.paths.docToRoot = "";
-    window._ojs.selfContained = false;
-    window._ojs.runtime.interpretFromScriptTags();
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
