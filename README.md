@@ -27,6 +27,8 @@ Based on "Reading in Data (Learn JS Data)" at https://observablehq.com/@dakoop/r
 
 Based on "JavaScript Fetch API and Cross-Origin Resource Sharing (CORS)" at https://www.youtube.com/watch?v=OBCZc-g4Fvc
 
+Based on "Serving files directly from github" at https://groups.google.com/g/brython/c/M--O59kY6GA
+
 Can be read as "Quarto RevealJS" at https://app.gitbook.com/o/QGgiJiNkwpv437Z2nY4O/s/PzgsiAKvIjFvzE5gqB5O/
 
 Can be browsed as "Quarto RevealJS" at https://vanheemstrasystems.github.io/quarto-revealjs/
