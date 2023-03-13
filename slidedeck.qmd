@@ -63,3 +63,6 @@ let progress = setInterval(() => {
 }, speed);
 </script>  
 
+```{ojs}
+data = d3.csv("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/cities.csv")
+```
