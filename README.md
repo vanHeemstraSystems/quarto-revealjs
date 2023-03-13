@@ -1,3 +1,5 @@
+[![Quarto Publish](https://github.com/vanHeemstraSystems/quarto-revealjs/actions/workflows/publish.yml/badge.svg)](https://github.com/vanHeemstraSystems/quarto-revealjs/actions/workflows/publish.yml)
+
 quarto-revealjs
 # Quarto RevealJS
 
