@@ -372,9 +372,9 @@ let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-reve
       'Access-Control-Allow-Origin':'*'
     }
   })
-  .then(res => resolve(res));
+  .then(res => res.json());
   
-console.log(progressData);
+console.log(progressData.resolve());
 
 let circularProgress = document.querySelector(".circular-progress"),
     progressValue = document.querySelector(".progress-value"),
