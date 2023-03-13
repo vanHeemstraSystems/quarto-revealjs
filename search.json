@@ -25,6 +25,6 @@
     "href": "slidedeck.html#progress",
     "title": "Slidedeck",
     "section": "Progress",
-    "text": "Progress\n\n  \n    0%\n  \n  Progress\n\n\n```{ojs}\nlet progressData = Promise.all([d3.json(\"https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json\")])\n  .then(\n    function success(allData) {\n      const allDataProgress = allData[0];\n      return[allDataProgress[0]]\n    },\n    function error(e) {\n      throw e;\n    }\n  );\n\nlet circularProgress = document.querySelector(\".circular-progress\"),\n    progressValue = document.querySelector(\".progress-value\");\n\nlet progressStartValue = 0,    \n    progressEndValue = 90,    \n    speed = 100;\n\nlet progress = setInterval(() => {\n    progressStartValue++;\n    progressValue.textContent = `${progressStartValue}%`\n    circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`\n    if(progressStartValue == progressEndValue){\n        clearInterval(progress);\n    }    \n}, speed);\n```\n\n\n\n\n\n\n\nOJS Syntax Error (line 49, column 1)The keyword ‘let’ is reserved"
+    "text": "Progress\n\n\n  \n    0%\n  \n  Progress"
   }
 ]
