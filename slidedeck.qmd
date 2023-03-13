@@ -54,6 +54,8 @@ let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-reve
     }
   })
   .then(res => res.json());
+  
+console.log(progressData);
 
 let circularProgress = document.querySelector(".circular-progress"),
     progressValue = document.querySelector(".progress-value"),
@@ -61,7 +63,7 @@ let circularProgress = document.querySelector(".circular-progress"),
 
 let progressStartValue = 0,    
     progressEndValue = 90,
-    progressLoadedEndValue = JSON.stringify(progressData),
+    progressLoadedEndValue = 55,
     speed = 100;
 
 let progress = setInterval(() => {
