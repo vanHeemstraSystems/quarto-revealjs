@@ -51,6 +51,13 @@ let progressPromise = new Promise(function(resolve, reject) {
     // Make an asynchronous call and either resolve or reject
     resolve("I am done with getting the progress ...");
 });
+  
+const progressConsumer = () => {
+    progressPromise.then(
+      result => {},
+      error => {}
+    )
+}  
 
 console.log(progressPromise);
 
