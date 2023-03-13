@@ -42,6 +42,7 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 <div class="container">
   <div class="circular-progress">
     <span class="progress-value">0%</span>
+    <span class="progress-end">?</span>
   </div>
   <span class="text">Progress</span>
 </div>
@@ -60,7 +61,8 @@ let progressData = Promise.all([d3.json("https://raw.githubusercontent.com/vanHe
   );
 
 let circularProgress = document.querySelector(".circular-progress"),
-    progressValue = document.querySelector(".progress-value");
+    progressValue = document.querySelector(".progress-value"),
+    progressEnd = document.querySelector(".progress-end");
 
 let progressStartValue = 0,    
     progressEndValue = 90,    
@@ -72,6 +74,7 @@ let progress = setInterval(() => {
     circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`
     if(progressStartValue == progressEndValue){
         clearInterval(progress);
-    }    
+    }
+    progressEnd.textContent = `${progressEnd}%`
 }, speed);
 </script>
