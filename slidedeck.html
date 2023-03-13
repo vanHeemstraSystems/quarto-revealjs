@@ -430,16 +430,16 @@ and much more
   </div>
   <span class="text">Progress</span>
 </div>
-<div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="48" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 47;"><span id="cb1-48"><a href="#cb1-48"></a><span class="bu">Promise</span><span class="op">.</span><span class="fu">all</span>([d3<span class="op">.</span><span class="fu">json</span>(<span class="st">"https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json"</span>)])</span>
-<span id="cb1-49"><a href="#cb1-49"></a>  <span class="op">.</span><span class="fu">then</span>(</span>
-<span id="cb1-50"><a href="#cb1-50"></a>  <span class="kw">function</span> <span class="fu">success</span>(allData) {</span>
-<span id="cb1-51"><a href="#cb1-51"></a>    <span class="kw">const</span> progress <span class="op">=</span> allData[<span class="dv">0</span>]<span class="op">;</span></span>
-<span id="cb1-52"><a href="#cb1-52"></a>    </span>
-<span id="cb1-53"><a href="#cb1-53"></a>    <span class="kw">let</span> circularProgressFOO <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">querySelector</span>(<span class="st">".circular-progress"</span>)<span class="op">,</span></span>
-<span id="cb1-54"><a href="#cb1-54"></a>    progressValueFOO <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">querySelector</span>(<span class="st">".progress-value"</span>)<span class="op">;</span></span>
-<span id="cb1-55"><a href="#cb1-55"></a>    </span>
-<span id="cb1-56"><a href="#cb1-56"></a>    <span class="co">/*</span></span>
+<div class="quarto-ojs-syntax-error">
+<div class="sourceCode" id="cb1" data-startfrom="48" data-syntax-error-position="0" data-source-offset="9"><pre class="sourceCode numberSource numberLines java number-lines code-with-copy"><code class="sourceCode java" style="counter-reset: source-line 47;"><span id="cb1-48"><a href="#cb1-48"></a>```<span class="op">{</span>ojs<span class="op">}</span></span>
+<span id="cb1-49"><a href="#cb1-49"></a>let progress <span class="op">=</span> Promise<span class="op">.</span><span class="fu">all</span><span class="op">([</span>d3<span class="op">.</span><span class="fu">json</span><span class="op">(</span><span class="st">"https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json"</span><span class="op">)])</span></span>
+<span id="cb1-50"><a href="#cb1-50"></a>  <span class="op">.</span><span class="fu">then</span><span class="op">(</span></span>
+<span id="cb1-51"><a href="#cb1-51"></a>  function <span class="fu">success</span><span class="op">(</span>allData<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb1-52"><a href="#cb1-52"></a>    <span class="dt">const</span> progress <span class="op">=</span> allData<span class="op">[</span><span class="dv">0</span><span class="op">];</span></span>
+<span id="cb1-53"><a href="#cb1-53"></a>    <span class="co">/*</span></span>
+<span id="cb1-54"><a href="#cb1-54"></a><span class="co">    let circularProgress = document.querySelector(".circular-progress"),</span></span>
+<span id="cb1-55"><a href="#cb1-55"></a><span class="co">    progressValue = document.querySelector(".progress-value");</span></span>
+<span id="cb1-56"><a href="#cb1-56"></a><span class="co">    </span></span>
 <span id="cb1-57"><a href="#cb1-57"></a><span class="co">    let progressStartValue = 0,    </span></span>
 <span id="cb1-58"><a href="#cb1-58"></a><span class="co">    progressEndValue = 90,    </span></span>
 <span id="cb1-59"><a href="#cb1-59"></a><span class="co">    speed = 100;</span></span>
@@ -453,15 +453,26 @@ and much more
 <span id="cb1-67"><a href="#cb1-67"></a><span class="co">      }    </span></span>
 <span id="cb1-68"><a href="#cb1-68"></a><span class="co">    }, speed);</span></span>
 <span id="cb1-69"><a href="#cb1-69"></a><span class="co">    */</span></span>
-<span id="cb1-70"><a href="#cb1-70"></a>    <span class="cf">return</span>[progress[<span class="dv">0</span>]]</span>
-<span id="cb1-71"><a href="#cb1-71"></a>  }<span class="op">,</span></span>
-<span id="cb1-72"><a href="#cb1-72"></a>  <span class="kw">function</span> <span class="fu">error</span>(e) {</span>
+<span id="cb1-70"><a href="#cb1-70"></a>    <span class="cf">return</span><span class="op">[</span>progress<span class="op">[</span><span class="dv">0</span><span class="op">]]</span></span>
+<span id="cb1-71"><a href="#cb1-71"></a>  <span class="op">},</span></span>
+<span id="cb1-72"><a href="#cb1-72"></a>  function <span class="fu">error</span><span class="op">(</span>e<span class="op">)</span> <span class="op">{</span></span>
 <span id="cb1-73"><a href="#cb1-73"></a>    <span class="cf">throw</span> e<span class="op">;</span></span>
-<span id="cb1-74"><a href="#cb1-74"></a>  }</span>
-<span id="cb1-75"><a href="#cb1-75"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-1" data-nodetype="expression">
+<span id="cb1-74"><a href="#cb1-74"></a>  <span class="op">}</span></span>
+<span id="cb1-75"><a href="#cb1-75"></a><span class="op">)</span></span>
+<span id="cb1-76"><a href="#cb1-76"></a>```</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<div class="callout callout-important callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>OJS Syntax Error (line 49, column 1)The keyword ‘let’ is reserved</strong></p>
+</div>
+<div class="callout-content">
 
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -699,7 +710,7 @@ let progress = setInterval(() => {
       });
     </script>
     <script type="ojs-module-contents">
-    {"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"Promise.all([d3.json(\"https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json\")])\n  .then(\n  function success(allData) {\n    const progress = allData[0];\n    \n    let circularProgressFOO = document.querySelector(\".circular-progress\"),\n    progressValueFOO = document.querySelector(\".progress-value\");\n    \n    /*\n    let progressStartValue = 0,    \n    progressEndValue = 90,    \n    speed = 100;\n    \n    let progress = setInterval(() => {\n      progressStartValue++;\n      progressValue.textContent = `${progressStartValue}%`\n      circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`\n      if(progressStartValue == progressEndValue){\n        clearInterval(progress);\n      }    \n    }, speed);\n    */\n    return[progress[0]]\n  },\n  function error(e) {\n    throw e;\n  }\n)\n"}]}
+    {"contents":[]}
     </script>
     <script type="module">
     window._ojs.paths.runtimeToDoc = "../..";
