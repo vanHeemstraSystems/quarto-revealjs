@@ -83,22 +83,6 @@ const consumer = () => {
 
 consumer();
 
-let progressPromise = new Promise(function(resolve, reject) {    
-    // Make an asynchronous call and either resolve or reject
-    resolve("I am done with getting the progress ...");
-});
-  
-const progressConsumer = () => {
-    progressPromise.then(
-      (result) => {
-        console.log(result);
-      },
-      (error) => {
-        console.log(error);
-      }
-    )
-}
-
 let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json", {
     mode: 'cors',
     headers: {
