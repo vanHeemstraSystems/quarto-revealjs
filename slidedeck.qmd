@@ -36,10 +36,6 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 
 ## Progress
 
-<script type="text/javascript" src="https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json"></script>
-
-<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
-
 ```{=html}
 <div class="container">
   <div class="circular-progress">
@@ -51,16 +47,12 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 ```
 
 <script type="text/javascript">
-let checkProgressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json", {
+let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json", {
     mode: 'cors',
     headers: {
       'Access-Control-Allow-Origin':'*'
     }
   })
-  .then(res => res.json())
-  .then(data => console.log(data));
-
-let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json")
   .then(res => res.json());
 
 let circularProgress = document.querySelector(".circular-progress"),
