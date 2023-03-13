@@ -384,7 +384,7 @@ let circularProgress = document.querySelector(".circular-progress"),
 
 let progressStartValue = 0,    
     progressEndValue = 90,
-    progressLoadedValue = 55,
+    progressLoadedEndValue = 55,
     speed = 100;
 
 let progress = setInterval(() => {
@@ -394,7 +394,7 @@ let progress = setInterval(() => {
     if(progressStartValue == progressEndValue){
         clearInterval(progress);
     }
-    progressLoadedValue.textContent = `${progressLoadedValue}%`
+    progressLoadedValue.textContent = `${progressLoadedEndValue}%`
 }, speed);
 </script>
 
