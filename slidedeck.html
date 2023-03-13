@@ -358,8 +358,6 @@ and much more
 </section>
 <section id="progress" class="slide level2">
 <h2>Progress</h2>
-<script type="text/javascript" src="https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json"></script>
-<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
 <div class="container">
   <div class="circular-progress">
     <span class="progress-value">0%</span>
@@ -368,16 +366,12 @@ and much more
   <span class="text">Progress</span>
 </div>
 <script type="text/javascript">
-let checkProgressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json", {
+let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json", {
     mode: 'cors',
     headers: {
       'Access-Control-Allow-Origin':'*'
     }
   })
-  .then(res => res.json())
-  .then(data => console.log(data));
-
-let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json")
   .then(res => res.json());
 
 let circularProgress = document.querySelector(".circular-progress"),
