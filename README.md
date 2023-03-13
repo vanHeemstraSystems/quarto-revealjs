@@ -21,6 +21,8 @@ Based on "How to make an Awesome Circular Progress Bar using Only HTML And CSS" 
 
 Based on "Create Circular Progress Bar in HTML CSS & JavaScript" at https://www.codinglabweb.com/2022/06/progress-bar-html-css-javascript.html
 
+Based on "Reading in Data (Learn JS Data)" at https://observablehq.com/@dakoop/reading-in-data-learn-js-data
+
 Can be read as "Quarto RevealJS" at https://app.gitbook.com/o/QGgiJiNkwpv437Z2nY4O/s/PzgsiAKvIjFvzE5gqB5O/
 
 Can be browsed as "Quarto RevealJS" at https://vanheemstrasystems.github.io/quarto-revealjs/
