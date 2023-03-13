@@ -50,10 +50,11 @@ Promise.all([d3.json("https://raw.githubusercontent.com/vanHeemstraSystems/quart
   .then(
   function success(allData) {
     const progress = allData[0];
-    /*
-    let circularProgress = document.querySelector(".circular-progress"),
-    progressValue = document.querySelector(".progress-value");
     
+    let circularProgressFOO = document.querySelector(".circular-progress"),
+    progressValueFOO = document.querySelector(".progress-value");
+    
+    /*
     let progressStartValue = 0,    
     progressEndValue = 90,    
     speed = 100;
