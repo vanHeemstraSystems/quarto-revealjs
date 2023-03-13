@@ -53,7 +53,7 @@ let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-reve
       'Access-Control-Allow-Origin':'*'
     }
   })
-  .then(res => res.json());
+  .then(res => resolve(res));
   
 console.log(progressData);
 
