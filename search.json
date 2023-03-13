@@ -25,6 +25,6 @@
     "href": "slidedeck.html#progress",
     "title": "Slidedeck",
     "section": "Progress",
-    "text": "Progress\n\n  \n    0%\n  \n  Progress\n\n\n\ncities = d3.csv(\"https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/cities.csv\")\n\n\n\n\n\n\n\nemployees = d3.json(\"raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/employees.json\")"
+    "text": "Progress\n\n  \n    0%\n  \n  Progress\n\n\n\ncities = d3.csv(\"https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/cities.csv\")\n\n\n\n\n\n\n\nemployees = d3.json(\"https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/employees.json\")"
   }
 ]
