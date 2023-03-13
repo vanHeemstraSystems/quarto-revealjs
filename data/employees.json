@@ -6,7 +6,12 @@
  },
  {"name":"Charles Mack",
   "title":"Jr Dev",
-  "age":24,
+  "age": 24,
+  "bonus": false
+ },
+ {"name":"Don Johnson",
+  "title":"Engineer",
+  "age": 45,
   "bonus": false
  }
 ]
