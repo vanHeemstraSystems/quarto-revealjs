@@ -51,6 +51,9 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 ```
 
 <script type="text/javascript">
+let checkProgressData = fetch("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json")
+  .then(res => console.log(res));
+
 let progressData = fetch("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json")
   .then(res => res.json())
   .then(json => JSON.parse(json));
