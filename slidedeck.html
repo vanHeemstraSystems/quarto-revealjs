@@ -366,6 +366,13 @@ and much more
   <span class="text">Progress</span>
 </div>
 <script type="text/javascript">
+let progressPromise = new Promise(function(resolve, reject) {    
+    // Make an asynchronous call and either resolve or reject
+    resolve("I am done with getting the progress ...");
+});
+
+console.log(progressPromise);
+  
 let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json", {
     mode: 'cors',
     headers: {
