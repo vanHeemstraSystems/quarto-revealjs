@@ -57,7 +57,8 @@ let checkProgressData = fetch("https://raw.githubusercontent.com/vanHeemstraSyst
       'Access-Control-Allow-Origin':'*'
     }
   })
-  .then(res => console.log(res));
+  .then(res => res.json())
+  .then(data => console.log(data));
 
 let progressData = fetch("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json")
   .then(res => res.json())
