@@ -36,6 +36,8 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 
 ## Progress
 
+<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+
 ```{=html}
 <div class="container">
   <div class="circular-progress">
@@ -45,7 +47,7 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 </div>
 ```
 
-```{ojs}
+<script type="text/javascript">
 let progressData = Promise.all([d3.json("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json")])
   .then(
     function success(allData) {
@@ -72,4 +74,4 @@ let progress = setInterval(() => {
         clearInterval(progress);
     }    
 }, speed);
-```
+</script>
