@@ -45,6 +45,21 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 </div>
 ```
 
+```{ojs}
+Promise.all([d3.csv("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/cities.csv"),
+             d3.json("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/employees.json")])
+  .then(
+  function success(allData) {
+    const cities = allData[0],
+          employees = allData[1];
+    return [cities[0], employees[0]];
+  },
+  function error(e) {
+    throw e;
+  }
+)
+```
+
 <script type="text/javascript">
 let circularProgress = document.querySelector(".circular-progress"),
     progressValue = document.querySelector(".progress-value");
@@ -64,9 +79,9 @@ let progress = setInterval(() => {
 </script>  
 
 ```{ojs}
-cities = d3.csv("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/cities.csv")
+// cities = d3.csv("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/cities.csv")
 ```
 
 ```{ojs}
-employees = d3.json("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/employees.json")
+// employees = d3.json("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/employees.json")
 ```
