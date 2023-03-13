@@ -368,7 +368,12 @@ and much more
   <span class="text">Progress</span>
 </div>
 <script type="text/javascript">
-let checkProgressData = fetch("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json")
+let checkProgressData = fetch("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json", {
+    mode: 'cors',
+    headers: {
+      'Access-Control-Allow-Origin':'*'
+    }
+  })
   .then(res => console.log(res));
 
 let progressData = fetch("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json")
