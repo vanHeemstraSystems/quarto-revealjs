@@ -362,7 +362,7 @@ and much more
 <div class="container">
   <div class="circular-progress">
     <span class="progress-value">0%</span>
-    <span class="progress-loaded-value">?</span>
+    <span class="progress-loaded-value">0%</span>
   </div>
   <span class="text">Progress</span>
 </div>
@@ -390,11 +390,11 @@ let progressStartValue = 0,
 let progress = setInterval(() => {
     progressStartValue++;
     progressValue.textContent = `${progressStartValue}%`
+    progressLoadedValue.textContent = `${progressLoadedEndValue}%`
     circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`
     if(progressStartValue == progressEndValue){
         clearInterval(progress);
     }
-    progressLoadedValue.textContent = `${progressLoadedEndValue}%`
 }, speed);
 </script>
 
