@@ -64,15 +64,16 @@ function getPromise(URL) {
   return promise;
 }
 
-const ALL_POKEMONS_URL = 'https://pokeapi.co/api/v2/pokemon?limit=50';
+// const ALL_POKEMONS_URL = 'https://pokeapi.co/api/v2/pokemon?limit=50';
+const ALL_PROGRESS_URL = 'https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json';  
 
-// We have discussed this function already!
-let promise = getPromise(ALL_POKEMONS_URL);
+// let promise = getPromise(ALL_POKEMONS_URL);
+let promise = getPromise(ALL_PROGRESS_URL);
 
 const consumer = () => {
     promise.then(
         (result) => {
-            console.log({result}); // Log the result of 50 Pokemons
+            console.log({result}); // Log the result
         },
         (error) => {
             // As the URL is a valid one, this will not be called.
