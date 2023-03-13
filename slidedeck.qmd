@@ -68,5 +68,5 @@ cities = d3.csv("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-rev
 ```
 
 ```{ojs}
-employees = d3.json("raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/employees.json")
+employees = d3.json("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/employees.json")
 ```
