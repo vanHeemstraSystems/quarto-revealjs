@@ -53,7 +53,7 @@ let progressPromise = new Promise(function(resolve, reject) {
 });
 
 console.log(progressPromise);
-  
+
 let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json", {
     mode: 'cors',
     headers: {
@@ -61,8 +61,6 @@ let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-reve
     }
   })
   .then(res => res.json());
-  
-console.log(progressData.resolve());
 
 let circularProgress = document.querySelector(".circular-progress"),
     progressValue = document.querySelector(".progress-value"),
