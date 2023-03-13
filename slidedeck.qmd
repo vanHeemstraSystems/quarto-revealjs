@@ -80,6 +80,17 @@ Promise.all([d3.json("https://raw.githubusercontent.com/vanHeemstraSystems/quart
 let circularProgress = document.querySelector(".circular-progress"),
     progressValue = document.querySelector(".progress-value");
 
+let progress = Promise.all([d3.json("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json")])
+  .then(
+    function success(allData) {
+      const progressData = allData[0];
+      return[progressData[0]]
+    },
+    function error(e) {
+      throw e;
+    }
+  );
+  
 let progressStartValue = 0,    
     progressEndValue = 90,    
     speed = 100;
