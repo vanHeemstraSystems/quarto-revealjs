@@ -71,14 +71,7 @@ const ALL_PROGRESS_URL = 'https://raw.githack.com/vanHeemstraSystems/quarto-reve
 let promise = getPromise(ALL_PROGRESS_URL);
 
 const consumer = () => {
-    promise.then(
-        (result) => {
-            console.log({result}); // Log the result
-        },
-        (error) => {
-            // As the URL is a valid one, this will not be called.
-            console.log('We have encountered an Error!'); // Log an error
-    });
+    promise.catch(error => console.log('We have encountered an Error!'));
 }
 
 consumer();
