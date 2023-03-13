@@ -25,6 +25,8 @@ Based on "Create Circular Progress Bar in HTML CSS & JavaScript" at https://www.
 
 Based on "Reading in Data (Learn JS Data)" at https://observablehq.com/@dakoop/reading-in-data-learn-js-data
 
+Based on "JavaScript Fetch API and Cross-Origin Resource Sharing (CORS)" at https://www.youtube.com/watch?v=OBCZc-g4Fvc
+
 Can be read as "Quarto RevealJS" at https://app.gitbook.com/o/QGgiJiNkwpv437Z2nY4O/s/PzgsiAKvIjFvzE5gqB5O/
 
 Can be browsed as "Quarto RevealJS" at https://vanheemstrasystems.github.io/quarto-revealjs/
