@@ -45,10 +45,7 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 </div>
 ```
 
-<script type="text/javascript">
-let circularProgress = document.querySelector(".circular-progress"),
-    progressValue = document.querySelector(".progress-value");
-
+```{ojs}
 let progressData = Promise.all([d3.json("https://raw.githubusercontent.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json")])
   .then(
     function success(allData) {
@@ -59,6 +56,11 @@ let progressData = Promise.all([d3.json("https://raw.githubusercontent.com/vanHe
       throw e;
     }
   );
+```
+
+<script type="text/javascript">
+let circularProgress = document.querySelector(".circular-progress"),
+    progressValue = document.querySelector(".progress-value");
 
 let progressStartValue = 0,    
     progressEndValue = 90,    
