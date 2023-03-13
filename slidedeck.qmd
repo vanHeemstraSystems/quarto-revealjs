@@ -56,9 +56,7 @@ let progressData = Promise.all([d3.json("https://raw.githubusercontent.com/vanHe
       throw e;
     }
   );
-```
 
-<script type="text/javascript">
 let circularProgress = document.querySelector(".circular-progress"),
     progressValue = document.querySelector(".progress-value");
 
@@ -74,4 +72,4 @@ let progress = setInterval(() => {
         clearInterval(progress);
     }    
 }, speed);
-</script> 
+```
