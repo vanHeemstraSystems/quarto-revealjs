@@ -71,9 +71,9 @@ let promise = getPromise(ALL_PROGRESS_URL);
 let loading = true;
 loading && console.log('Loading ...');
   
-let progressLoadedEndValue = 55,  
+let progressLoadedEndValue = 55;  
 
-const consumer = () => {  
+const consumer = (progressLoadedEndValue) => {  
     promise.finally(() => {
       loading = false;
       console.log(`Promise Settled and loading is ${loading}`);
