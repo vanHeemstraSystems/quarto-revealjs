@@ -48,12 +48,6 @@ body{
     font-weight: 600;
     color: #7d2ae8;
 }
-.progress-loaded-value{
-    position: relative;
-    font-size: 40px;
-    font-weight: 600;
-    color: #7d2ae8;
-}
 .text{
     font-size: 30px;
     font-weight: 500;
