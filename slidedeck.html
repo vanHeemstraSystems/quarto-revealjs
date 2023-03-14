@@ -388,23 +388,22 @@ const ALL_PROGRESS_URL = 'https://raw.githack.com/vanHeemstraSystems/quarto-reve
 let promise = getPromise(ALL_PROGRESS_URL);
 
 let loading = true;
-loading && console.log('Loading ...');
-  
-let progressLoadedEndValue = 55;  
+loading && console.log('Loading ...'); 
 
-const consumer = (progressLoadedEndValue) => {  
+const consumer = () => {  
     promise.finally(() => {
       loading = false;
       console.log(`Promise Settled and loading is ${loading}`);
     }).then((result) => {
-      //return JSON.parse(result);
-      progressLoadedEndValue = JSON.parse(result);
+      data = JSON.parse(result);
+      console.log(data);
+      return data;
     }).catch((error) => {
       console.log(error)
     });
 }
 
-consumer(progressLoadedEndValue);
+let progressLoadedEndValue = consumer();
 
 /*
 let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json", {
