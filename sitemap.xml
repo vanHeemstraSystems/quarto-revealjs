@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/vanHeemstraSystems/quarto-revealjs/presentation.html</loc>
-    <lastmod>2023-03-14T15:46:45.872Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/vanHeemstraSystems/quarto-revealjs/slidedeck.html</loc>
-    <lastmod>2023-03-14T15:46:47.236Z</lastmod>
-  </url>
-  <url>
     <loc>https://github.com/vanHeemstraSystems/quarto-revealjs/about.html</loc>
-    <lastmod>2023-03-14T15:46:47.852Z</lastmod>
+    <lastmod>2023-03-14T15:59:26.414Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/vanHeemstraSystems/quarto-revealjs/index.html</loc>
-    <lastmod>2023-03-14T15:46:48.128Z</lastmod>
+    <lastmod>2023-03-14T15:59:27.050Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/vanHeemstraSystems/quarto-revealjs/presentation.html</loc>
+    <lastmod>2023-03-14T15:59:27.334Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/vanHeemstraSystems/quarto-revealjs/slidedeck.html</loc>
+    <lastmod>2023-03-14T15:59:28.694Z</lastmod>
   </url>
 </urlset>
