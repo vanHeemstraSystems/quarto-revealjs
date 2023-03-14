@@ -77,7 +77,10 @@ const consumer = () => {
       console.log(`Promise Settled and loading is ${loading}`);
     }).then((result) => {
       data = JSON.parse(result);
-      console.log(data.progress[0]);
+      console.log("data: ", data);
+      console.log("data[0]: ", data[0]);
+      console.log("data[0].start: ", data[0].start);
+      console.log("data[0].end: ", data[0].end);
   
       let circularProgress = document.querySelector(".circular-progress"),
           progressValue = document.querySelector(".progress-value"),
