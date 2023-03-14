@@ -78,29 +78,20 @@ const consumer = () => {
     }).then((result) => {
       data = JSON.parse(result);
       console.log("data: ", data);
-      // console.log('data["progress"]: ', data["progress"]);  // DISCARD
-      // console.log('data.["progress"]: ', data.["progress"]); // DISCARD
       console.log('data.progress: ', data.progress);
-      // console.log("data[0]: ", data[0]); // DISCARD
-      // console.log("data.[0]: ", data.[0]); // DISCARD
-      // console.log("data[0].start: ", data[0].start); // DISCARD
       console.log("data.progress.start: ", data.progress.start);
-      // console.log("data[0].end: ", data[0].end); // DISCARD
       console.log("data.progress.end: ", data.progress.end);
-  
-      let circularProgress = document.querySelector(".circular-progress"),
-          progressValue = document.querySelector(".progress-value"),
-          progressLoadedValue = document.querySelector(".progress-loaded-value");
 
-      let progressStartValue = 0,    
-          progressEndValue = 90,
-          progressLoadedEndValue = data.progress.end,
+      let circularProgress = document.querySelector(".circular-progress"),
+          progressValue = document.querySelector(".progress-value")
+
+      let progressStartValue = data.progress.start,    
+          progressEndValue = data.progress.end,
           speed = 100;
 
       let progress = setInterval(() => {
           progressStartValue++;
           progressValue.textContent = `${progressStartValue}%`
-          progressLoadedValue.textContent = `${progressLoadedEndValue}%`
           circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`
           if(progressStartValue == progressEndValue){
               clearInterval(progress);
@@ -114,15 +105,5 @@ const consumer = () => {
 }
 
 consumer();
-
-/*
-let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json", {
-    mode: 'cors',
-    headers: {
-      'Access-Control-Allow-Origin':'*'
-    }
-  })
-  .then(res => res.json());
-*/  
-
+ 
 </script>
