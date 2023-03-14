@@ -398,12 +398,14 @@ const consumer = () => {
       console.log(`Promise Settled and loading is ${loading}`);
     }).then((result) => {
       console.log({result});
+      let firstResults = JSON.parse(result).results[0];
+      return firstResults;
     }).catch((error) => {
       console.log(error)
     });
 }
 
-consumer();
+let results = consumer();
 
 let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json", {
     mode: 'cors',
