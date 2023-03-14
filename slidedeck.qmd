@@ -85,7 +85,7 @@ const consumer = () => {
 
       let progressStartValue = 0,    
           progressEndValue = 90,
-          progressLoadedValue = 55,
+          progressLoadedEndValue = 55,
           speed = 100;
 
       let progress = setInterval(() => {
