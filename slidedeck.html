@@ -390,19 +390,21 @@ let promise = getPromise(ALL_PROGRESS_URL);
 let loading = true;
 loading && console.log('Loading ...');
   
+let progressLoadedEndValue = 55,  
+
 const consumer = () => {  
     promise.finally(() => {
       loading = false;
       console.log(`Promise Settled and loading is ${loading}`);
     }).then((result) => {
-      return JSON.parse(result);
+      //return JSON.parse(result);
+      progressLoadedEndValue = JSON.parse(result);
     }).catch((error) => {
       console.log(error)
     });
 }
 
-//let results = consumer();
-  console.log("my results: ", consumer());
+consumer(progressLoadedEndValue);
 
 /*
 let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json", {
@@ -420,7 +422,6 @@ let circularProgress = document.querySelector(".circular-progress"),
 
 let progressStartValue = 0,    
     progressEndValue = 90,
-    progressLoadedEndValue = 55,
     speed = 100;
 
 let progress = setInterval(() => {
