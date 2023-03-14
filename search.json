@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "slidedeck.html#hello-there",
-    "href": "slidedeck.html#hello-there",
-    "title": "Slidedeck",
-    "section": "Hello, There",
-    "text": "Hello, There\nThis presentation will show you examples of what you can do with Quarto and Reveal.js, including:\n\nPresenting code and LaTeX equations\nIncluding computations in slide output\nImage, video, and iframe backgrounds\nFancy transitions and animations\nPrinting to PDF\n\n…\n\nand much more"
-  },
-  {
-    "objectID": "slidedeck.html#progress",
-    "href": "slidedeck.html#progress",
-    "title": "Slidedeck",
-    "section": "Progress",
-    "text": "Progress\n\n  \n    0%\n    0%\n  \n  Progress"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -26,5 +12,19 @@
     "title": "Index",
     "section": "",
     "text": "About Home"
+  },
+  {
+    "objectID": "slidedeck.html#hello-there",
+    "href": "slidedeck.html#hello-there",
+    "title": "Slidedeck",
+    "section": "Hello, There",
+    "text": "Hello, There\nThis presentation will show you examples of what you can do with Quarto and Reveal.js, including:\n\nPresenting code and LaTeX equations\nIncluding computations in slide output\nImage, video, and iframe backgrounds\nFancy transitions and animations\nPrinting to PDF\n\n…\n\nand much more"
+  },
+  {
+    "objectID": "slidedeck.html#progress",
+    "href": "slidedeck.html#progress",
+    "title": "Slidedeck",
+    "section": "Progress",
+    "text": "Progress\n\n  \n    0%\n    0%\n  \n  Progress"
   }
 ]
