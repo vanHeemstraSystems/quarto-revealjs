@@ -397,7 +397,26 @@ const consumer = () => {
     }).then((result) => {
       data = JSON.parse(result);
       console.log(data);
-      return data;
+  
+      let circularProgress = document.querySelector(".circular-progress"),
+          progressValue = document.querySelector(".progress-value"),
+          progressLoadedValue = document.querySelector(".progress-loaded-value");
+
+      let progressStartValue = 0,    
+          progressEndValue = 90,
+          speed = 100;
+
+      let progress = setInterval(() => {
+          progressStartValue++;
+          progressValue.textContent = `${progressStartValue}%`
+          progressLoadedValue.textContent = `${progressLoadedEndValue}%`
+          circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`
+          if(progressStartValue == progressEndValue){
+              clearInterval(progress);
+          }
+      }, speed);  
+  
+      // return data;
     }).catch((error) => {
       console.log(error)
     });
@@ -415,23 +434,6 @@ let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-reve
   .then(res => res.json());
 */  
 
-let circularProgress = document.querySelector(".circular-progress"),
-    progressValue = document.querySelector(".progress-value"),
-    progressLoadedValue = document.querySelector(".progress-loaded-value");
-
-let progressStartValue = 0,    
-    progressEndValue = 90,
-    speed = 100;
-
-let progress = setInterval(() => {
-    progressStartValue++;
-    progressValue.textContent = `${progressStartValue}%`
-    progressLoadedValue.textContent = `${progressLoadedEndValue}%`
-    circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`
-    if(progressStartValue == progressEndValue){
-        clearInterval(progress);
-    }
-}, speed);
 </script>
 
 <div class="footer footer-default">

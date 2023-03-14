@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Index",
-    "section": "",
-    "text": "About Home"
-  },
-  {
     "objectID": "slidedeck.html#hello-there",
     "href": "slidedeck.html#hello-there",
     "title": "Slidedeck",
@@ -26,5 +12,19 @@
     "title": "Slidedeck",
     "section": "Progress",
     "text": "Progress\n\n  \n    0%\n    0%\n  \n  Progress"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Index",
+    "section": "",
+    "text": "About Home"
   }
 ]
