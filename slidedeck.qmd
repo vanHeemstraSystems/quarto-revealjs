@@ -77,7 +77,7 @@ const consumer = () => {
       console.log(`Promise Settled and loading is ${loading}`);
     }).then((result) => {
       console.log({result});
-      let firstResults = JSON.parse(result)[0];
+      let firstResults = JSON.parse(result).[0];
       return firstResults;
     }).catch((error) => {
       console.log(error)
