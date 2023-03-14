@@ -76,19 +76,15 @@ const consumer = () => {
       loading = false;
       console.log(`Promise Settled and loading is ${loading}`);
     }).then((result) => {
-      console.log({result});
-      // let firstResults = JSON.parse(result).progress[0];
-      console.log("Parsed result: ", JSON.parse(result));
-      // return firstResults;
-      return {"foo":"bar"};
+      return JSON.parse(result);
     }).catch((error) => {
       console.log(error)
     });
 }
 
 let results = consumer();
-    console.log("Look at my results: ", results);
 
+/*
 let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json", {
     mode: 'cors',
     headers: {
@@ -96,6 +92,7 @@ let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-reve
     }
   })
   .then(res => res.json());
+*/  
 
 let circularProgress = document.querySelector(".circular-progress"),
     progressValue = document.querySelector(".progress-value"),
