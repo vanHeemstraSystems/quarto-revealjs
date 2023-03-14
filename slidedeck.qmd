@@ -85,6 +85,7 @@ const consumer = () => {
 }
 
 let results = consumer();
+    console.log("Look at my results: ", results);
 
 let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json", {
     mode: 'cors',
