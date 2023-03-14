@@ -77,7 +77,7 @@ const consumer = () => {
       console.log(`Promise Settled and loading is ${loading}`);
     }).then((result) => {
       data = JSON.parse(result);
-      console.log(data);
+      console.log(data.progress[0]);
   
       let circularProgress = document.querySelector(".circular-progress"),
           progressValue = document.querySelector(".progress-value"),
@@ -85,7 +85,7 @@ const consumer = () => {
 
       let progressStartValue = 0,    
           progressEndValue = 90,
-          progressLoadedEndValue = 55,
+          progressLoadedEndValue = data,
           speed = 100;
 
       let progress = setInterval(() => {
