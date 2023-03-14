@@ -83,6 +83,7 @@ const consumer = () => {
 }
 
 let results = consumer();
+  console.log("my results: ", results);
 
 /*
 let progressData = fetch("https://raw.githack.com/vanHeemstraSystems/quarto-revealjs/main/data/progress.json", {
